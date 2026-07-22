@@ -1,0 +1,36 @@
+import math 
+
+def add(a, b):
+    return a + b
+
+def sum(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        raise ValueError("Division By Zero")
+    return a / b
+
+def power(a, b):
+    return math.pow(a, b)
+
+def sqrt(a):
+    if a < 0:
+        raise ValueError("Input must be a non-negative number")
+    return math.sqrt(a)
+
+def abs(a):
+    if a < 0:
+        return -a
+    return a
+
+def mod(a, b):
+    if b == 0:
+        raise ValueError("Division By Zero")
+    return a % b
