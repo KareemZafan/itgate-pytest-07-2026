@@ -57,7 +57,7 @@ def test_sqrt():
     with pytest.raises(ValueError):
         calc.sqrt(-1)  
 
-@pytest.mark.skip(reason="Not implemented yet")
+#@pytest.mark.skip(reason="Not implemented yet")
 def test_abs():
     assert calc.abs(-5) == 5
     assert calc.abs(0) == 0
