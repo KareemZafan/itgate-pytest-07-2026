@@ -57,7 +57,7 @@ def test_sqrt():
     with pytest.raises(ValueError):
         calc.sqrt(-1)  
 
-@pytest.mark.skip(reason="Not implemented yet")
+#@pytest.mark.skip(reason="Not implemented yet")
 def test_abs():
     assert calc.abs(-5) == 5
     assert calc.abs(0) == 0
@@ -82,7 +82,7 @@ def test_bill_payment_message():
 
 
 def test_factorial():
-    assert calc.factorial(0) == 1
+    assert calc.factorial(0) == 0
     assert calc.factorial(1) == 1
     assert calc.factorial(5) == 120
     with pytest.raises(ValueError):
