@@ -1,0 +1,6 @@
+
+Opening database connection...
+
+
+Inserting data into the database...
+

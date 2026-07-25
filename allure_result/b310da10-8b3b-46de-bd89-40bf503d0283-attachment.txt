@@ -1,0 +1,6 @@
+
+Deleting data from the database...
+
+
+Closing database connection...
+

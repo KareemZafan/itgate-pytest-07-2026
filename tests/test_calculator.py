@@ -57,7 +57,7 @@ def test_sqrt():
     with pytest.raises(ValueError):
         calc.sqrt(-1)  
 
-#@pytest.mark.skip(reason="Not implemented yet")
+@pytest.mark.skip(reason="Not implemented yet")
 def test_abs():
     assert calc.abs(-5) == 5
     assert calc.abs(0) == 0
@@ -80,3 +80,10 @@ def test_bill_payment_message():
     ## This is a test case for the bill payment message, consider the code to test the message sending
     assert 100 > 0
 
+
+def test_factorial():
+    assert calc.factorial(0) == 1
+    assert calc.factorial(1) == 1
+    assert calc.factorial(5) == 120
+    with pytest.raises(ValueError):
+        calc.factorial(-1)
